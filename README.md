@@ -1,3 +1,14 @@
+## Problem identification and Solution
+### Problems
+- `Point` has only getters and setters
+- `DistanceAndDirectionCalculator` serves just as a utility class
+
+### Solution
+- Move the distance and direction calculation logic to `Point` along with the tests
+- Remove the getters and setters since the data members are read only from within the same class
+- Remove the `DistanceAndDirectionCalculator` class because moving the logic to `Point` makes this class have no logic
+
+## Original Problem
 So Shivam had just learned about OOP. He had written a program before that did two things,
 - Find distance between two points
 - Find direction (angle) between two points in Radians.
